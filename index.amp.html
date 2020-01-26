@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html ⚡ lang="fr" prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <title>La Casa di Bino</title>
+        <meta property="og:title" content="La Casa di Bino">
+        <meta property="og:site_name" content="La Casa di Bino">
+        <meta property="og:url" content="https://lacasadibino.000webhostapp.com/index.amp.html">
+        <meta property="og:description" content="Venez découvrir la cuisine traditionnelle et familiale de La Casa di Bino, dans une ambiance chaleureuse et décontractée plongez dans un décor Italo'Americain.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://lacasadibino.000webhostapp.com/logo.jpg"> 
+        <link rel="canonical" href="https://lacasadibino.000webhostapp.com/">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!-- Stylesheet CSS-->
+        <!-- <link rel ="stylesheet" href="style/style.css"> -->
+        <style>@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');</style>
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <style amp-custom>
+            @font-face{
+                font-family: "Lobster";
+                src: url("../fonts/Lobster_1.3.otf") format("otf");
+            }
+
+            body{
+                width: 100%;
+                height: 100%;
+                background: url("bg.jpg") black fixed;
+                background-attachment: fixed !important;
+                color: white;
+                background-position: left top;
+                font-size: 2em;
+                font-family: 'Cabin', sans-serif;
+            }
+
+            h1{
+                text-align: center;
+            }
+
+            h1, h2{
+                font-family: 'courgette', cursive;
+            }
+
+            #vert{
+                color: green;
+            }
+
+            #rouge{
+                color: red;
+            }
+
+            a{
+                color: #00d0ff;
+            }
+
+            a:hover{
+                text-decoration: none;
+                color:orange;           }
+
+            a.navbar-brand{
+                font-family: 'Courgette', cursive;
+                font-size: 2em;
+                color: white !important;
+                text-shadow: 0 1px 0 #eee,
+                0 2px 0 #e5e5e5,
+                -1px 3px 0 #9e9e9e,
+                -1px 4px 0 #9e9e9e,
+                -2px 5px 0 #b9b9b9,
+                -2px 6px 0 #b9b9b9,
+                -2px 7px 2px rgba(0,0,0, 0.6),
+                -2px 7px 8px rgba(0,0,0, 0.2),
+                -2px 7px 45px rgba(0,0,0, 0.4);
+            }
+
+            .banner{
+                width: 100%;
+                border-radius: 5px;
+                filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+                margin-top: 50px;
+            }
+
+            .contenu{
+                width: 100%;
+                height: 100%;
+                margin-top: 50px;
+                padding: 15px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .contenu a{
+                text-decoration: none;
+            }
+
+            .breadcrumb{
+                background-color: #0000!important;
+                font-family: 'courgette', cursive;
+            }
+
+            .breadcrumb a{
+                color: white!important;
+            }
+
+            .breadcrumb a:hover{
+                color: orange!important;
+            }
+
+            .navbar-inverse{
+                background-color: #141803b0;
+                backdrop-filter: blur(5px);
+                border-bottom: none;
+                font-family: 'courgette', cursive;
+            }
+
+            .navbar-inverse .navbar-nav > li > a {
+                color: white;
+            }
+
+            .navbar-inverse .navbar-nav > li > a:hover{
+                color: #00d0ff;
+            }
+
+            .bino{
+                font-family: 'courgette', cursive;
+                text-shadow:2px 2px 5px rgb(122, 175, 173);
+                font-size: 20px;
+            }
+
+            footer{
+                text-align: center;
+            }
+
+            .contact img{
+                opacity: 0.7;
+            }
+
+            .contact img:hover{
+                opacity: 1;
+                filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
+            }
+
+            .diapo{
+                width: 100%;
+                height: auto;
+                display : flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                margin: auto;
+            }
+
+            .zoom{
+                width: 250px;
+                height: 250px;
+                position: relative;
+                filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.5));
+                border: none;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .zoom2{
+                width: 250px;
+                height: 250px;
+                position: relative;
+                border: none;
+                overflow: hidden;
+                /* border-radius: 50%; */
+                /* -webkit-border-radius: 50%; */
+                filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.5));
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .myImage{
+                width: 100%;
+                height:100%;
+                overflow: hidden;
+                border-radius: inherit;
+                -webkit-border-radius: inherit;
+            }
+
+
+            .myImage img{
+                transition: transform 1s;
+                -webkit-transition: -webkit-transform 1s;
+                -moz-transition: -moz-transform 1s;
+                -ms-transition: -ms-transform 1s;
+                -o-transition: -o-transform 1s;
+                opacity: 1;
+                border-radius: inherit;
+                -webkit-border-radius: inherit;
+            }
+
+            .myImage img:hover{
+                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                -moz-transform: scale(1.1);
+                -ms-transform: scale(1.1);
+                -o-transform: scale(1.1);
+                border-radius: inherit;
+                -webkit-border-radius: inherit;
+            }
+
+            article{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                padding: 15px;
+            }
+
+            #image1:hover::after{
+                content:"La Chef";
+                text-align: center;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color: white;
+                font-size: 2em;
+                line-height: 1em;
+                background: rgba(0,0,0, 0.6);
+                width: 100%;
+            }
+
+            #image2:hover::after{
+                content:"Pâte maison";
+                text-align: center;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color: white;
+                font-size: 2em;
+                line-height: 1em;
+                background: rgba(0,0,0, 0.6);
+                width: 100%;
+            }
+
+            #image3:hover::after{
+                content:"Service à table";
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                color: white;
+                font-size: 2em;
+                line-height: 1em;
+                background: rgba(0,0,0, 0.6);
+                width: 100%;
+            }
+
+            #image41:hover::after{
+                content:"Tagliatelles maison";
+                text-align: center;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                color: white;
+                font-size: 2em;
+                line-height: 1em;
+                background: rgba(0,0,0, 0.6);
+                width: 100%;
+            }
+
+            .myImageSlide{
+                width: 100%;
+                height:100%;
+                overflow: hidden;
+                /* border-radius: 50%; */
+                /* -webkit-border-radius: 50%; */
+            }
+
+            #image6:hover{
+                animation: glisse 5s infinite alternate;
+                /* border-radius: 50%; */
+                /* -webkit-border-radius: 50%; */
+            }
+
+            #image9:hover{
+                animation: glisse 5s infinite alternate;
+                border-radius: inherit;
+                -webkit-border-radius: inherit;
+            }
+
+            @keyframes glisse{
+                0%{
+                    transform: translateY(0);
+                }
+                12.5%{
+                    transform: translateY(0);
+                }
+                87.5%{
+                    transform: translateY(-255px);
+                }
+                100%{
+                    transform: translateY(-255px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#">La Casa di Bino</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="emporter.jpg" title="voir la carte" target="_blank">Commander</a></li>
+                        <li><a href="event.php">Événements</a></li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+            <div class="banner">
+                <amp-img src="laCasars.jpg" layout="responsive" width="266" height="80" alt="photo du restaurant"></amp-img>
+            </div>
+            <div class="contenu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1><span id="vert">Bienvenue</span>, Welcome, <span id ="rouge">Benvenuti</span></h1><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a id="pizza" href="#les_pizzas">Les Pizzas et Pâtes maison</a></li>
+                                    <li class="breadcrumb-item"><a id="salade" href="#les_salades">Les Salades</a></li>
+                                    <li class="breadcrumb-item"><a id="resto" href="#le_resto">Le Restaurant</a></li>
+                                    <li class="breadcrumb-item"><a id="contact" href="#le_contact">Contact</a></li>
+                                </ol>
+                            </nav>
+                            <div class="diapo">
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image1">
+                                            <amp-img class="chef" width="250" height="250" src="la_chefSm.jpg" alt="Bino"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image2">
+                                            <amp-img width="250" height="250" src="pasta.jpg" alt="photo de plats"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image3">
+                                            <amp-img src="binoSm.jpg"  width="250" height="250" alt="photo de plats"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image99">
+                                            <a href="event.php"><amp-img src="atelier.jpg"  width="250" height="250" alt="atelier enfant"></amp-img></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <article>
+                                <p>Venez découvrir la cuisine traditionnelle et familiale de<strong class="bino"> La Casa di Bino</strong>.</p>
+                                <p>Dans une ambiance chaleureuse et décontractée plongez dans un décor Italo'Americain.</p>                                
+                                <p>Avec une carte proposant des produits frais : salades composées, plat du jour.</p>
+                                <p>Mais surtout des pâtes et des pizzas faites maison, privilégiant au maximum les producteurs locaux.</p>
+                                <p>Des desserts comme le succulent Tiramisu, la délicieuse Panna Cotta confectionnés par la chef évidemment.</p>
+                                <br>
+                            </article><hr id="les_pizzas"><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Les Pizzas et Pâtes maison</h2><br>
+                                <p>Tous les jours la pâte à pizza, les pâtes fraîches maison, les sauces et les garnitures sont fabriquées avec des produits frais.</p>
+                                <p>Un grand choix de pizzas vous attend, ou laissez-vous tenter par les pâtes fraîches sauces au choix <em style="font-size: 0.7em">(bolognaise, carbonara ou pistou)</em>.</p><br>
+                                <div class="diapo">
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image4">
+                                        <amp-img width="250" height="250" src="pizza.jpg" alt="pizza"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image41">
+                                        <amp-img width="250" height="250" src="pate_maisonSm.jpg" alt="pizza"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image5">
+                                        <amp-img width="250" height="250" src="pizza_tartiflette.jpg" alt="pizza"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br><hr id="les_salades"><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Les Salades</h2><br>
+                                <p>Sur place ou à emporter venez déguster les salades de saisons ou les indétrônables salades à la carte.</p><br>
+                            <div class="diapo">
+                                <div class="zoom2 img-rounded">
+                                    <div class="myImageSlide">
+                                        <div id="image6">
+                                            <amp-img width="250" height="250" src="salade_poulpeSm.jpg" alt="salade_poulpe"></amp-img>
+                                            <amp-img width="250" height="250" src="salade_melon.jpg" alt="salade_melon"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom2 img-rounded">
+                                    <div class="myImage">
+                                        <div id="image7">
+                                            <amp-img width="250" height="250" src="salades.jpg" alt="salades"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom2 img-rounded">
+                                    <div class="myImage">
+                                        <div id="image8">
+                                            <amp-img width="250" height="250" src="salade_empSm.jpg" alt="salade_emporter"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom2 img-rounded">
+                                    <div class="myImageSlide">
+                                        <div id="image9">
+                                            <amp-img width="250" height="250" src="plancheBrusch.jpg" alt="planche Bruschetta"></amp-img>
+                                            <amp-img width="250" height="250" src="corse.jpg" alt="salade corse"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><br><hr id="le_resto"><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h2>Le Restaurant</h2><br>
+                                <p><strong class="bino">La Casa di Bino</strong></p>
+                                <p>Ouvert du Mardi au Samedi</p>
+                                <p>de 11h00 à 14h00 et de 18h00 à 22h30</p>
+                                <p>et le Dimanche de 18h00 à 22h30.</p>
+                                <p>Sur place, à emporter ou livré (Uber Eats)</p>
+                                <p>En plein coeur du centre ville de la Valette du var</p>
+                                <p>Parking gratuit 2h en zone bleu et grand parking souterrain <a href="https://goo.gl/maps/JrJ4nbwdj87DK53UA" target="_blank">place Charles de Gaulle</a></p>
+                                <p>Salle climatisée, service à table.</p><br>
+                                <p></p>
+                            <div class="diapo">
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image10">
+                                            <amp-img width="250" height="250" src="enterSm.jpg" alt="pizza"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom2 img-rounded">
+                                    <div class="myImage">
+                                        <div id="image11">
+                                            <amp-img width="250" height="250" src="plancheSm.jpg" alt="pizza"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zoom img-rounded">
+                                    <div class="myImage">
+                                        <div id="image12">
+                                            <amp-img width="250" height="250" src="logo.jpg" alt="pizza"></amp-img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><hr>
+                        </div>
+                    </div>
+                </div>            
+            </div>       
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <div class="contact">
+                            <h2 id="le_contact">Contact</h2><br>
+                                <a href="emporter.jpg" title="Voir la Carte" target="_blank">Commande à emporter </a><em style="font-size: 0.7em">(cliquez pour voir la carte)</em><br>
+                                <span class="glyphicon glyphicon-earphone"></span>
+                                <a href="tel:04.83.99.77.63">04.83.99.77.63</a></p>
+                                <p><span class="glyphicon glyphicon-home"></span>
+                                <a href="https://goo.gl/maps/7GmVkMHmMbAZoGvC6" onclick="window.open(this.href, 'plan', 'height=800, width=800, top=100, left=100, toolbar=no, menubar=yes, location=no, resizable=yes, scrollbars=no, status=no'); return false;">
+                                75 avenue Char Verdun<br>
+                                83160 La Valette du Var</a>
+                            </p>   
+                            <ul class="list-inline">
+                                <li><a href="https://m.me/Lacasadibino"><amp-img src="Messenger.png" width="50" height="50" alt="logo_messenger"></amp-img></a></li>
+                                <li><a href="https://www.facebook.com/Lacasadibino/"><amp-img src="fb.png" width="50" height="50" alt="logo_facebook"></amp-img></a></li>
+                                <li><a href="https://u.ubereats.com/fr-FR/toulon-fr/food-delivery/la-casa-di-bino/ezKIAa3vTfGC-IlCDaITig/"><amp-img src="uber-eats-logo.png" width="50" height="50" alt="logo_uber_eat"></amp-img></a></li>
+                                <li><a href="https://deliveroo.fr/fr/menu/toulon/la-valette-du-var/la-casa-di-bino#"><amp-img src="deliveroo.png" width="50" height="50" alt="logo_deliveroo"></amp-img></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </footer>
+    </body>
+</html>
