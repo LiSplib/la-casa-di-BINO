@@ -64,7 +64,7 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                            <img src="sable1.jpg" class="d-block w-100" alt="atelier sable">
+                            <img src="sable.jpg" class="d-block w-100" alt="atelier sable">
                             </div>
                             <div class="carousel-item">
                             <img src="sable2.jpg" class="d-block w-100" alt="atelier sable">
