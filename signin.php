@@ -21,11 +21,10 @@ if(!empty($_POST)){
     if(empty($errors)){
     require_once 'db.php';
 
-        $req = $pdo->prepare("INSERT INTO user SET username = ?, password = ?, email = ?");
+        $req = $pdo->prepare('INSERT INTO user SET username = ?, password = ?, email = ?');
         $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
         $req->execute([$_POST['username'], $password, $_POST['email']]);
-        die('Votre compte a bien été créé');
-        header('Location: http://localhost/testco/register.php');
+        header('Location: event.php');
     }
 
 

@@ -1,10 +1,9 @@
 <?php
-require 'header.php';
-require_once 'db.php'; ?>
+require 'header.php'; ?>
 
 <div class="jumbotron jumbotron-fluid text-center">
     <div class="container mt-5">
-        <h1>Connexion Admin</h1>
+        <h1>Se Connecter</h1>
             <div class="userLog"> 
                 <form action="login.php" method="POST">
                     <label>Nom d'utilisateur</label>
