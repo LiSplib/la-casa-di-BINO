@@ -14,13 +14,12 @@ require 'header.php';
     $currentDate = new DateTime();
     $euDate = $currentDate->format('d-m-Y');
     require_once 'db.php';
-    $reponse = $pdo->prepare("SELECT id, DATE_FORMAT(dateHour, '%d-%m-%Y') AS dateHour, title, content  FROM events ORDER BY :eventDate");
-    $reponse->bindParam(':eventDate', $finalEventDate);
+    $reponse = $pdo->prepare("SELECT id, DATE_FORMAT(dateHour, '%d-%m-%Y') AS dateHour, DATE_FORMAT(dateHour, '%m-%Y') AS dateD, title, content, photo FROM events ORDER BY dateD");
     $reponse->execute();
     while ($donnees = $reponse->fetch())
     {
     ?>
-    <div class="jumbotron jumbotron-fluid text-center">
+    <div class="jumbotron jumbotron text-center text-white bg-dark">
         <div class="container">
     <?php 
         $dateEvent = $donnees['dateHour'];
@@ -37,10 +36,10 @@ require 'header.php';
             <p class="lead"><?= $donnees['dateHour'] ?></p>
             <hr class="my-4">
             <div class="card" style="width: 18rem; margin: auto;">
-                <img src="img/atelier.jpg" class="card-img-top" alt="atelier enfant">
+                <img src="<?= $donnees['photo'] ?>" class="card-img-top" alt="atelier enfant">
             </div>
             <p><?= $donnees['title'] ?></p>
-            <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Plus d'info</a>
+            <a class="btn btn-info btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Plus d'info</a>
         </div>
     </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
