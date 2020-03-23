@@ -1,5 +1,8 @@
 <?php
-require 'header.php'; ?>
+
+require '../src/bootstrap.php';
+
+render('header'); ?>
 
 <div class="jumbotron jumbotron-fluid text-center">
     <div class="container mt-5">
@@ -16,4 +19,4 @@ require 'header.php'; ?>
     </div>
 </div>
 
-<?php require 'footer.php';?>
+<?php render('footer');

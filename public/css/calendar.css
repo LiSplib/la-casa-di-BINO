@@ -1,0 +1,68 @@
+.calendar__table{
+    width: 100%;
+    height: calc(100vh - 300px);
+}
+
+.calendar__table td{
+    border: 1px solid #ccc;
+    vertical-align: top;
+    width: calc(100vw / 7);
+    height: 20%;
+}
+
+.calendar__table--6weeks td{
+    height: 16.66%;
+}
+
+.calendar__table td:hover, .calendar__table--6weeks td:hover{
+    background-color: #454a50;
+}
+
+.calendar__weekday{
+    font-weight: bold;
+    font-size: calc(1vw + 1vh + 0.5vmin);
+}
+
+.calendar__table td.is-today{
+    background-color: #454a50;
+}
+
+.calendar__othermonth .calendar__day{
+    opacity: 0.8;
+    color: grey;
+}
+
+.jumbotron{
+    opacity: 0.8!important;
+}
+
+.vignettes{
+    flex-direction: row;
+    overflow: scroll;
+    height: 180px;
+    /* width: 90vw; */
+    /* box-shadow: 2px 10px 10px var(--boxshad);
+    background: var(--bg); */
+    border-radius: 8px;
+    overflow-y: hidden;
+}
+
+/* #scroller{
+    scrollbar-color: #ffd521 #3ba496;
+} */
+
+.caroussel{
+    display: inline-flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.vignettes .caroussel img{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    /* border: 2px solid white; */
+    /* box-shadow: 2px 10px 10px var(--boxshad); */
+    /* transition: all 1s; */
+    border-radius: 8px;
+}

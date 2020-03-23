@@ -1,5 +1,6 @@
 <?php
-require 'header.php';
+require '../src/bootstrap.php';
+render('header');
 
 ?>
 
@@ -45,43 +46,17 @@ require 'header.php';
 <?php
     if (!empty($_FILES['file'])){
 
-        // $ftp_server = "files.000webhost.com";
-        // $ftp_user_name = "lacasadibino";
-        // $ftp_user_pass = "chezBino61011";
-        $destination_dir = "img/upload/";
-        $source_file = !empty($_FILES['file']['tmp_name']);
-        $destination_file = !empty($destination_dir.basename($_FILES['file']['name']));
-        
-        if (move_uploaded_file($source_file, $destination_file)) {
-            $_SESSION['flash']['success'] = 'Transfert effectué !';
-        } else {
-            $_SESSION['flash']['danger'] = 'L\'envoi a échoué !';
+        $destination_dir = "../img/upload/";
+        $source_file = ($_FILES['file']['tmp_name']);
+        $destination_file = basename($_FILES['file']['name']);
+            if (move_uploaded_file($source_file, $destination_dir.$destination_file)) {
+                $_SESSION['flash']['success'] = 'Transfert effectué !';
+            } else {
+                $_SESSION['flash']['danger'] = 'L\'envoi a échoué !';
+            }
         }
-
-        // $conn_id = ftp_connect($ftp_server) or die("Could not connect to $ftp_server");
         
-        // $destination_file = $destination_dir;
-        // $login_result = ftp_login($conn_id, $ftp_user_name, $ftp_user_pass);
-        // session_start();
-        // if((!$conn_id) || ($login_result)){
-        //     $_SESSION['flash']['danger'] = 'FTP connexion a échouée !';
-        //     exit;
-        // }else{
-        //     $_SESSION['flash']['success'] = 'Connexion réussi !';
-        // }
-        
-        // $upload = ftp_put($conn_id, $destination_file, $source_file, FTP_BINARY);
-        
-        // if(!$upload){
-        //     $_SESSION['flash']['danger'] = 'L\'envoi a échoué !';
-        // }else{
-        //     $_SESSION['flash']['success'] = 'Transfert effectué !';
-        // }
-        
-        // ftp_close($conn_id);
-
-    }
     
     
-require 'footer.php';
+render('footer');
 ?>

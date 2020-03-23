@@ -2,33 +2,26 @@
 require 'header.php';
 ?>
 
-<?php if(isset($_SESSION['auth'])): ?>
-    <div class="jumbotron jumbotron-fluid text-center">
-        <div class="container mt-5">
-            <h3 class="mt-5">Bienvenue <?= $_SESSION['username'] ?></h3>
-        </div>
-    </div>
-<?php endif; ?>
-
-    <?php
+<?php
     $currentDate = new DateTime();
     $euDate = $currentDate->format('d-m-Y');
-    require_once 'db.php';
-    $reponse = $pdo->prepare("SELECT id, DATE_FORMAT(dateHour, '%d-%m-%Y') AS dateHour, DATE_FORMAT(dateHour, '%m-%Y') AS dateD, title, content, photo FROM events ORDER BY dateD");
+    require_once '../db.php';
+    $sql = "SELECT id, DATE_FORMAT(dateHour, '%d-%m-%Y') AS dateHour, DATE_FORMAT(dateHour, '%m-%Y') AS dateD, title, content, photo FROM events ORDER BY dateD";
+    $reponse = $pdo->prepare($sql);
     $reponse->execute();
     while ($donnees = $reponse->fetch())
     {
     ?>
     <div class="jumbotron jumbotron text-center text-white bg-dark">
         <div class="container">
+        
     <?php 
         $dateEvent = $donnees['dateHour'];
         $dEvent = explode("-", $dateEvent);
         $dDate = explode("-", $euDate);
         $finalEventDate = $dEvent['2'].$dEvent['1'].$dEvent['0'];
         $finalDate = $dDate['2'].$dDate['1'].$dDate['0'];
-        if($finalEventDate > $finalDate): 
-    ?>
+        if($finalEventDate > $finalDate): ?>
             <h1 class="display-4 mt-5">Le prochain événement à la Casa di Bino</h1>
             <?php else: ?>
             <h1 class="display-4 mt-5">Les événements précédents à la Casa di Bino</h1>
@@ -87,4 +80,5 @@ require 'header.php';
             </div>
         </div>                
     <?php } ?>
+
 <?php require 'footer.php';?>
